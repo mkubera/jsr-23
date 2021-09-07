@@ -4,29 +4,31 @@ import Button from "./components/Button";
 import Input from "./components/Input";
 import ShowName from "./components/ShowName";
 import { v4 as uuidv4 } from "uuid";
+import Bands from "./components/music/Bands";
 
 function App() {
-  const names = [
-    { isPresent: false, name: "Mikolaj" },
-    { isPresent: true, name: "Andrzej" },
-    { isPresent: true, name: "Marta" },
-  ];
+  // const names = [
+  //   { isPresent: false, name: "Mikolaj" },
+  //   { isPresent: true, name: "Andrzej" },
+  //   { isPresent: true, name: "Marta" },
+  // ];
 
-  const btnAlertMsg = (e) => {
-    console.log(e.target);
-    alert("Message: Hello, world!");
-  };
-  const btnLabel = "Click me now, pls!";
+  // const btnAlertMsg = (e) => {
+  //   console.log(e.target);
+  //   alert("Message: Hello, world!");
+  // };
+  // const btnLabel = "Click me now, pls!";
 
-  const inputGetUsername = (e) => {
-    console.log(e.target.value);
-  };
-  let inputPlaceholder = "Your Username";
+  // const inputGetUsername = (e) => {
+  //   console.log(e.target.value);
+  // };
+  // let inputPlaceholder = "Your Username";
 
   return (
     <div className="App">
       <header className="App-header">
-        <pre>{localStorage.getItem("uuid")}</pre>
+        <Bands />
+        {/* <pre>{localStorage.getItem("uuid")}</pre>
         <pre>{uuidv4()}</pre>
         <pre>{uuidv4()}</pre>
         <h3>hi</h3>
@@ -34,14 +36,14 @@ function App() {
           {[{ id: 1 }, { id: 2 }, { id: 3 }].map(({ id }, i) => (
             <li key={i}>id: {id}</li>
           ))}
-        </ul>
+        </ul> */}
         {/* <p>2 + 2 = {2 + 2}</p> */}
         {/* <section>
           <ShowName name={"Andrzej P."} />
           <ShowName name={name2} />
           <ShowName name={"Marta Sz."} />
         </section> */}
-        <Input
+        {/* <Input
           onInputChange={inputGetUsername}
           placeholder={inputPlaceholder}
         />
@@ -53,7 +55,7 @@ function App() {
               <p>{name}</p>
             </div>
           ))}
-        </section>
+        </section> */}
       </header>
     </div>
   );
