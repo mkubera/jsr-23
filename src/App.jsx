@@ -2,9 +2,11 @@
 import "./App.css";
 import Button from "./components/Button";
 import Input from "./components/Input";
+import NameForm from "./components/NameForm";
 import ShowName from "./components/ShowName";
 import { v4 as uuidv4 } from "uuid";
 import Bands from "./components/music/Bands";
+import Counter from "./components/Counter";
 
 function App() {
   // const names = [
@@ -27,6 +29,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Counter />
+        <NameForm />
         <Bands />
         {/* <pre>{localStorage.getItem("uuid")}</pre>
         <pre>{uuidv4()}</pre>
